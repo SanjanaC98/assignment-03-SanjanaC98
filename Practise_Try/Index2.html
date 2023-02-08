@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a False Ceiling</title>
+    <style>
+        body { margin: 0; }
+
+        /* CSS for a spinning animation */ 
+        #loader {
+            border: 5px solid #5a5a5a; 
+            border-top: 5px solid #a02121; 
+            border-radius: 100%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        #ui {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Hello!</h3>
+    <h1>A Contoured False ceiling</h1>
+    <p>This page is going to help you create a countoured false ceiling. You can use attractor points to create a wavy model for the false ceiling.</p>
+    <p>You will have to enter the following :- </p>
+    <ol>
+    <li>Length of the room </li>
+    <li>Socation of attractor points </li>
+    <li>Spacing between the contoured panels </li>
+    <li>Thickness of the panels </li>
+    </ol>
+    <p>Check a sample of what can be created on this page</p>
+    <img src="Example.png" alt="sample">
+</body>
+<body>
+    <div id="loader"></div> 
+    <div id="container">
+        <div id="overlay">
+            <div>
+                <input type="range" id="Length" name="Length" min="12" max="26" value="20" step="2">
+                <label for="Length">Length</label>
+            </div>
+            <div>
+                <input type="range" id="Spacing" name="Spacing" min="0.4" max="2" value="1" step="0.2">
+                <label for="Spacing">Spacing</label>
+            </div>
+            <div>
+                <input type="range" id="Count" name="Count" min="10" max="30" value="20" step="1">
+                <label for="Count">Count</label>
+            </div>
+            <div>
+                <input type="range" id="Pt1X" name="Pt1X" min="12" max="26" value="20" step="2">
+                <label for="Pt1X">Pt1X</label>
+            </div>
+            <div>
+                <input type="range" id="Pt1Y" name="Pt1Y" min="12" max="26" value="20" step="2">
+                <label for="Pt1Y">Pt1Y</label>
+            </div>
+            <div>
+                <input type="range" id="Pt1Z" name="Pt1Z" min="12" max="26" value="20" step="2">
+                <label for="Pt1Z">Pt1Z</label>
+            </div>
+            <div>
+                <input type="range" id="Pt2X" name="Pt2X" min="12" max="26" value="20" step="2">
+                <label for="Pt2X">Pt2X</label>
+            </div>
+            <div>
+                <input type="range" id="Pt2Y" name="Pt2Y" min="12" max="26" value="20" step="2">
+                <label for="Pt1Y">Pt1Y</label>
+            </div>
+            <div>
+                <input type="range" id="Pt2Z" name="Pt2Z" min="12" max="26" value="20" step="2">
+                <label for="Pt2Z">Pt1Z</label>
+            </div>
+            <div>
+                <input type="range" id="Thickness" name="Thickness" min="0.1" max="0.6" value="0.3" step="0.1">
+                <label for="Thickness">Thickness</label>
+            </div>
+        </div>
+    </div>
+    <script type="importmap">
+        {
+            "imports": {
+              "three": "https://unpkg.com/three@0.147.0/build/three.module.js",
+              "three/addons/": "https://unpkg.com/three@0.147.0/examples/jsm/",
+              "rhino3dm": "https://unpkg.com/rhino3dm@0.15.0-beta/rhino3dm.module.js",
+              "rhinocompute": "https://cdn.jsdelivr.net/npm/compute-rhino3d@0.13.0-beta/compute.rhino3d.module.js"
+            }
+          }
+      </script>
+    <script type="module" src="script.js"></script> 
+</body>
+</html>
