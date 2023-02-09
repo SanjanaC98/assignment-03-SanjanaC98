@@ -49,7 +49,8 @@
 
 </body>
 <body>
-    
+    <div id="loader"></div> 
+    <div id="container"></div>
         <div id="overlay">
             <div>
                 <img src="Example.png" alt="Sample" width="1080" height="600" />
@@ -65,6 +66,10 @@
             <div>
                 <input type="range" id="Count" name="Count" min="10" max="30" value="20" step="1">
                 <label for="Count">Count</label>
+            </div>
+            <div>
+                <input type="range" id="Thickness" name="Thickness" min="0.1" max="0.6" value="0.3" step="0.1">
+                <label for="Thickness">Thickness</label>
             </div>
             <div>
                 <input type="range" id="Pt1X" name="Pt1X" min="12" max="26" value="20" step="2">
@@ -90,12 +95,6 @@
                 <input type="range" id="Pt2Z" name="Pt2Z" min="12" max="26" value="20" step="2">
                 <label for="Pt2Z">Pt1Z</label>
             </div>
-            <div>
-                <input type="range" id="Thickness" name="Thickness" min="0.1" max="0.6" value="0.3" step="0.1">
-                <label for="Thickness">Thickness</label>
-            </div>
-        <div id="loader"></div> 
-        <div id="container"></div>
         </div>
     <script type="importmap">
         {
@@ -107,6 +106,6 @@
             }
           }
       </script>
-    <script type="module" src="script.js"></script> 
+    <script type="module" src="Index.js"></script> 
 </body>
 </html>

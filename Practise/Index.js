@@ -9,10 +9,10 @@ const definitionName = 'New FC.gh'
 
 //Slider 
 const Length_slider = document.getElementById('Length')
-radius_slider.addEventListener('mouseup', onSliderChange, false)
-radius_slider.addEventListener('touchend', onSliderChange, false)
+Length_slider.addEventListener('mouseup', onSliderChange, false)
+Length_slider.addEventListener('touchend', onSliderChange, false)
 
-const Gap_slider = document.getElementById('Spacing')
+const Spacing_slider = document.getElementById('Spacing')
 Spacing_slider.addEventListener('mouseup', onSliderChange, false)
 Spacing_slider.addEventListener('touchend', onSliderChange, false)
 
@@ -21,32 +21,32 @@ count_slider.addEventListener('mouseup', onSliderChange, false)
 count_slider.addEventListener('touchend', onSliderChange, false)
 
 const Thickness_slider = document.getElementById('Thickness')
-count_slider.addEventListener('mouseup', onSliderChange, false)
-count_slider.addEventListener('touchend', onSliderChange, false)
+Thickness_slider.addEventListener('mouseup', onSliderChange, false)
+Thickness_slider.addEventListener('touchend', onSliderChange, false)
 
 const Pt1X_slider = document.getElementById('Pt1X')
-count_slider.addEventListener('mouseup', onSliderChange, false)
-count_slider.addEventListener('touchend', onSliderChange, false)
+Pt1X_slider.addEventListener('mouseup', onSliderChange, false)
+Pt1X_slider.addEventListener('touchend', onSliderChange, false)
 
 const Pt1Y_slider = document.getElementById('Pt1Y')
-count_slider.addEventListener('mouseup', onSliderChange, false)
-count_slider.addEventListener('touchend', onSliderChange, false)
+Pt1Y_slider.addEventListener('mouseup', onSliderChange, false)
+Pt1Y_slider.addEventListener('touchend', onSliderChange, false)
 
 const Pt1Z_slider = document.getElementById('Pt1Z')
-count_slider.addEventListener('mouseup', onSliderChange, false)
-count_slider.addEventListener('touchend', onSliderChange, false)
+Pt1Z_slider.addEventListener('mouseup', onSliderChange, false)
+Pt1Z_slider.addEventListener('touchend', onSliderChange, false)
 
 const Pt2X_slider = document.getElementById('Pt2X')
-count_slider.addEventListener('mouseup', onSliderChange, false)
-count_slider.addEventListener('touchend', onSliderChange, false)
+Pt2X_slider.addEventListener('mouseup', onSliderChange, false)
+Pt2X_slider.addEventListener('touchend', onSliderChange, false)
 
 const Pt2Y_slider = document.getElementById('Pt2Y')
-count_slider.addEventListener('mouseup', onSliderChange, false)
-count_slider.addEventListener('touchend', onSliderChange, false)
+Pt2Y_slider.addEventListener('mouseup', onSliderChange, false)
+Pt2Y_slider.addEventListener('touchend', onSliderChange, false)
 
 const Pt2Z_slider = document.getElementById('Pt2Z')
-count_slider.addEventListener('mouseup', onSliderChange, false)
-count_slider.addEventListener('touchend', onSliderChange, false)
+Pt2Z_slider.addEventListener('mouseup', onSliderChange, false)
+Pt2Z_slider.addEventListener('touchend', onSliderChange, false)
 
 const loader = new Rhino3dmLoader()
 loader.setLibraryPath('https://cdn.jsdelivr.net/npm/rhino3dm@0.15.0-beta/')
@@ -60,7 +60,7 @@ rhino3dm().then(async m => {
     //RhinoCompute.url = getAuth( 'RHINO_COMPUTE_URL' ) // RhinoCompute server url. Use http://localhost:8081 if debugging locally.
     //RhinoCompute.apiKey = getAuth( 'RHINO_COMPUTE_KEY' )  // RhinoCompute server api key. Leave blank if debugging locally.
     
-    RhinoCompute.url = 'http://localhost:6500/' //if debugging locally.
+    RhinoCompute.url = 'http://localhost:5000/' //if debugging locally.
 
 
     // load a grasshopper file!
