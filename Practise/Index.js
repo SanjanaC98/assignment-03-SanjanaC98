@@ -17,8 +17,8 @@ Spacing_slider.addEventListener('mouseup', onSliderChange, false)
 Spacing_slider.addEventListener('touchend', onSliderChange, false)
 
 const Count_slider = document.getElementById('Count')
-count_slider.addEventListener('mouseup', onSliderChange, false)
-count_slider.addEventListener('touchend', onSliderChange, false)
+Count_slider.addEventListener('mouseup', onSliderChange, false)
+Count_slider.addEventListener('touchend', onSliderChange, false)
 
 const Thickness_slider = document.getElementById('Thickness')
 Thickness_slider.addEventListener('mouseup', onSliderChange, false)
